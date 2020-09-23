@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border: solid gray 1px;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.news-source{
+  width: 4rem;
+  border-right: solid gray 1px;
+  margin-right: 4px;
+}
+
+.news-title{
+  color: blue;
+}
+
+.news-content-container{
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4px;
+}
