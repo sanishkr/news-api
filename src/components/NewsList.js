@@ -1,10 +1,14 @@
 import React from 'react';
 import NewsItem from './NewsItem';
 
-export default () => {
+export default ({news=[]}) => {
   return (
     <div className="news-list">
-      <NewsItem/>
+    {
+      news.map((n,i) => 
+        <NewsItem key={i+1} {...n}/>
+      )
+    }
     </div>
 )
 }
